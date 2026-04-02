@@ -1,1 +1,2301 @@
-<h1>近期新发布竞品车型信息</h1>
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>零跑A10 市场分析报告</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <!-- 统一的 Tailwind 配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                        accent: '#f59e0b',
+                        neutral: '#6b7280',
+                        'chart-1': '#3b82f6',
+                        'chart-2': '#10b981',
+                        'chart-3': '#f59e0b',
+                        'chart-4': '#ef4444',
+                        'chart-5': '#8b5cf6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+            .section-title {
+                @apply text-2xl md:text-3xl font-bold mb-6 pb-2 border-b-2 border-primary text-gray-800;
+            }
+            .subsection-title {
+                @apply text-xl md:text-2xl font-semibold mb-4 text-gray-700;
+            }
+            .highlight-box {
+                @apply bg-blue-50 border-l-4 border-primary p-4 my-4 rounded;
+            }
+            .data-card {
+                @apply bg-white rounded-lg shadow-md p-4 h-full;
+            }
+            .chart-container {
+                @apply bg-white rounded-lg shadow-md p-4 h-full;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-car text-primary text-2xl"></i>
+                <span class="text-xl font-bold text-gray-800">近期新发布竞品车型信息</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#overview" class="text-gray-600 hover:text-primary transition-colors">零跑A10分析</a>
+                <a href="#qq3-overview" class="text-gray-600 hover:text-primary transition-colors">奇瑞QQ3分析</a>
+                <a href="#tank700-overview" class="text-gray-600 hover:text-primary transition-colors">长城坦克700分析</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 头部区域 -->
+        <header class="mb-10">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-shadow">零跑A10 2026年款 市场分析报告</h1>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">2026年3月26日发布</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">科技平权</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">智能驾驶</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">6-9万级市场</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">纯电SUV</span>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex items-center justify-center p-4">
+                        <img src="https://p26-doubao-search-sign.byteimg.com/motor-article-img/94a375fdc1674887bb2d04fb27ac1162~tplv-be4g95zd3a-image.jpeg?lk3s=feb11e32&amp;x-expires=1790473169&amp;x-signature=guti7VQ2PdZH5f5eZ7uFasVZfk4%3D" alt="零跑A10外观" class="rounded-lg shadow-lg max-h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 概览卡片 -->
+        <section id="overview" class="mb-12">
+            <h2 class="section-title">概览</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">价格区间</h3>
+                        <i class="fa fa-tag text-primary text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-primary">6.58-8.68万</p>
+                    <p class="text-gray-500 mt-2">4个版本覆盖不同需求</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">续航里程</h3>
+                        <i class="fa fa-bolt text-secondary text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-secondary">403-505km</p>
+                    <p class="text-gray-500 mt-2">CLTC综合工况续航</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">快充时间</h3>
+                        <i class="fa fa-flash text-accent text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-accent">16分钟</p>
+                    <p class="text-gray-500 mt-2">30%-80%（505km版本）</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">智能驾驶</h3>
+                        <i class="fa fa-microchip text-chart-5 text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-chart-5">L2+级</p>
+                    <p class="text-gray-500 mt-2">激光雷达+城市NOA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 目标人群画像 -->
+        <section id="target-audience" class="mb-12">
+            <h2 class="section-title">一、目标人群画像：科技普惠的"务实新青年"</h2>
+            <p class="mb-6 text-gray-700">零跑A10的定价策略（6.58-8.68万）和配置逻辑呈现出明显的<strong class="text-primary">"科技平权"</strong>特征，其目标人群可细分为三类：</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- 核心人群 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="bg-primary bg-opacity-10 p-4">
+                        <h3 class="text-xl font-bold text-primary flex items-center">
+                            <i class="fa fa-user mr-2"></i>
+                            核心人群
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-2">预算敏感但拒绝"毛坯房"的年轻首购族</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fa fa-check-circle text-primary mr-2"></i>25-35岁，一二线城市新白领或三四线城市年轻家庭</li>
+                            <li><i class="fa fa-check-circle text-primary mr-2"></i>预算8万以内但注重智能化体验</li>
+                            <li><i class="fa fa-check-circle text-primary mr-2"></i>痛点：预算有限但不愿用"老年机"</li>
+                            <li><i class="fa fa-check-circle text-primary mr-2"></i>解决方案：6万级价格提供14.6英寸2.5K屏+骁龙8155芯片</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 家庭增购 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="bg-secondary bg-opacity-10 p-4">
+                        <h3 class="text-xl font-bold text-secondary flex items-center">
+                            <i class="fa fa-users mr-2"></i>
+                            家庭增购
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-2">家庭增购的"智能代步"需求者</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fa fa-check-circle text-secondary mr-2"></i>已有燃油车家庭，需第二辆车用于通勤、接娃</li>
+                            <li><i class="fa fa-check-circle text-secondary mr-2"></i>预算控制在10万内</li>
+                            <li><i class="fa fa-check-circle text-secondary mr-2"></i>关注点：实用性、便利性、经济性</li>
+                            <li><i class="fa fa-check-circle text-secondary mr-2"></i>吸引点：VTOL外放电、505km续航、电动尾门、后排小桌板</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 科技尝鲜 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                    <div class="bg-accent bg-opacity-10 p-4">
+                        <h3 class="text-xl font-bold text-accent flex items-center">
+                            <i class="fa fa-rocket mr-2"></i>
+                            科技尝鲜
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-semibold text-lg mb-2">科技尝鲜的"下沉市场极客"</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fa fa-check-circle text-accent mr-2"></i>三四线城市青年，对高阶智驾有认知</li>
+                            <li><i class="fa fa-check-circle text-accent mr-2"></i>预算无法支撑20万+车型</li>
+                            <li><i class="fa fa-check-circle text-accent mr-2"></i>心理："花小钱体验未来"</li>
+                            <li><i class="fa fa-check-circle text-accent mr-2"></i>独特价值：8.68万的激光雷达版是全球首款将城市NOA+激光雷达打入9万以内的车型</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p class="text-gray-700"><strong>核心洞察：</strong>零跑A10成功找到了传统"老头乐"和高端智能电动车之间的市场空白，通过"科技平权"理念吸引了三类原本难以同时满足的用户群体。</p>
+            </div>
+        </section>
+
+        <!-- 竞品对比与深度分析 -->
+        <section id="competitive-analysis" class="mb-12">
+            <h2 class="section-title">二、竞品对比与深度分析</h2>
+            <p class="mb-6 text-gray-700">零跑A10所处的6-9万级纯电小型SUV市场，竞品普遍采用"成本优先"策略，智能化配置普遍贫瘠。</p>
+            
+            <h3 class="subsection-title">2.1 核心竞品参数对比</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">对比维度</th>
+                            <th class="py-3 px-4 text-left text-primary">零跑A10 505激光雷达版</th>
+                            <th class="py-3 px-4 text-left">比亚迪元UP 401km领先型</th>
+                            <th class="py-3 px-4 text-left">五菱缤果PLUS 510km旗舰版</th>
+                            <th class="py-3 px-4 text-left">名爵MG4 530智趣版</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">指导价</td>
+                            <td class="py-3 px-4 font-bold text-primary">8.68万</td>
+                            <td class="py-3 px-4">10.98万</td>
+                            <td class="py-3 px-4">9.88万</td>
+                            <td class="py-3 px-4">9.68万</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智驾芯片</td>
+                            <td class="py-3 px-4 font-bold text-primary">骁龙8650</td>
+                            <td class="py-3 px-4">NVIDIA DRIVE Orin N</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">地平线J6e</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">激光雷达</td>
+                            <td class="py-3 px-4 font-bold text-primary">128线（1个）</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">-</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">摄像头</td>
+                            <td class="py-3 px-4 font-bold text-primary">11个（含800万×2）</td>
+                            <td class="py-3 px-4">12个</td>
+                            <td class="py-3 px-4">1个</td>
+                            <td class="py-3 px-4">6个</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">毫米波雷达</td>
+                            <td class="py-3 px-4 font-bold text-primary">3个</td>
+                            <td class="py-3 px-4">5</td>
+                            <td class="py-3 px-4">0</td>
+                            <td class="py-3 px-4">3个</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">NOA功能</td>
+                            <td class="py-3 px-4 font-bold text-primary">高速+城市</td>
+                            <td class="py-3 px-4">高速NOA</td>
+                            <td class="py-3 px-4">定速巡航</td>
+                            <td class="py-3 px-4">高速NOA</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">自动泊车</td>
+                            <td class="py-3 px-4 font-bold text-primary">支持（含记忆泊车）</td>
+                            <td class="py-3 px-4">支持</td>
+                            <td class="py-3 px-4">-</td>
+                            <td class="py-3 px-4">支持（多场景智能泊车）</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">车机芯片</td>
+                            <td class="py-3 px-4 font-bold text-primary">骁龙8295</td>
+                            <td class="py-3 px-4">骁龙778G</td>
+                            <td class="py-3 px-4">无公开信息</td>
+                            <td class="py-3 px-4">骁龙8155</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">屏幕</td>
+                            <td class="py-3 px-4 font-bold text-primary">14.6英寸2.5K</td>
+                            <td class="py-3 px-4">12.8英寸</td>
+                            <td class="py-3 px-4">10.1英寸</td>
+                            <td class="py-3 px-4">15.6英寸2.5K</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">音区</td>
+                            <td class="py-3 px-4 font-bold text-primary">主驾+副驾</td>
+                            <td class="py-3 px-4">主驾+副驾+后排</td>
+                            <td class="py-3 px-4">主驾+副驾</td>
+                            <td class="py-3 px-4">主驾+副驾</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">扬声器</td>
+                            <td class="py-3 px-4 font-bold text-primary">12</td>
+                            <td class="py-3 px-4">6</td>
+                            <td class="py-3 px-4">4</td>
+                            <td class="py-3 px-4">6</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">座椅加热通风</td>
+                            <td class="py-3 px-4 font-bold text-primary">前排加热</td>
+                            <td class="py-3 px-4">无加热通风</td>
+                            <td class="py-3 px-4">无加热通风</td>
+                            <td class="py-3 px-4">前排加热、通风（选配）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">2.2 竞争洞察</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-level-down text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">降维打击</h4>
+                    </div>
+                    <p class="text-gray-700">A10激光雷达版在智驾硬件上<strong>对标20万级车型</strong>（如小鹏P5、智己LS6），但价格仅为对手40%</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-line-chart text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">配置断层</h4>
+                    </div>
+                    <p class="text-gray-700">竞品在9万以下普遍仅提供基础L2（车道保持+ACC），A10是唯一提供城市NOA、自动变道、记忆泊车的车型</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-microchip text-accent text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">车机代差</h4>
+                    </div>
+                    <p class="text-gray-700">竞品多使用低端车机芯片或老旧方案，A10的8155/8295芯片确保3-5年不卡顿</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-chart-5 bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-car text-chart-5 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">跨界竞争</h4>
+                    </div>
+                    <p class="text-gray-700">名爵MG4作为两厢车与A10形成跨界竞争，在续航和屏幕尺寸上略有优势，但A10在智驾硬件和价格上更具竞争力</p>
+                </div>
+            </div>
+            
+            <!-- 竞品价格与配置对比图表 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="chart-container">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-700">价格与续航对比</h4>
+                    <canvas id="priceRangeChart" height="300"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-700">智能配置对比</h4>
+                    <canvas id="smartFeaturesChart" height="300"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 差异化优势 -->
+        <section id="advantages" class="mb-12">
+            <h2 class="section-title">三、差异化优势：把"高端配置"做成"入门标配"</h2>
+            <p class="mb-6 text-gray-700">零跑A10的核心战略是<strong class="text-primary">"全域自研带来的成本重构"</strong>，具体优势体现在：</p>
+            
+            <h3 class="subsection-title">3.1 智能驾驶：9万级市场的"孤勇者"</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">配置亮点</th>
+                            <th class="py-3 px-4 text-left text-primary">505激光雷达版</th>
+                            <th class="py-3 px-4 text-left">竞品普遍水平</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">感知硬件</td>
+                            <td class="py-3 px-4 font-bold text-primary">128线激光雷达×1 + 毫米波雷达×3 + 摄像头×11</td>
+                            <td class="py-3 px-4">无激光雷达，无毫米波雷达，摄像头≤5个</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智驾芯片</td>
+                            <td class="py-3 px-4 font-bold text-primary">高通骁龙8650</td>
+                            <td class="py-3 px-4">无专用智驾芯片</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">城市NOA</td>
+                            <td class="py-3 px-4 font-bold text-primary">支持城市路段导航辅助驾驶</td>
+                            <td class="py-3 px-4">仅支持定速巡航</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">高速NOA</td>
+                            <td class="py-3 px-4 font-bold text-primary">支持（含自动变道、匝道自动驶出/入）</td>
+                            <td class="py-3 px-4">不支持</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">泊车功能</td>
+                            <td class="py-3 px-4 font-bold text-primary">自动泊车 + 记忆泊车 + 循迹倒车</td>
+                            <td class="py-3 px-4">仅倒车影像</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">主动安全</td>
+                            <td class="py-3 px-4 font-bold text-primary">含DOW开门预警、后方碰撞预警、前方交通穿行预警</td>
+                            <td class="py-3 px-4">仅基础ABS+ESP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="highlight-box mb-8">
+                <p class="text-gray-700"><strong>关键突破：</strong>这是目前全球范围内<strong>唯一</strong>在9万以内提供完整城市NOA、激光雷达、8295座舱芯片的量产车型。</p>
+            </div>
+            
+            <h3 class="subsection-title">3.2 智能座舱：拒绝"丐版屏幕"</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">配置项</th>
+                            <th class="py-3 px-4 text-left text-primary">零跑A10</th>
+                            <th class="py-3 px-4 text-left">同价位竞品</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">车机芯片</td>
+                            <td class="py-3 px-4 font-bold text-primary">骁龙8155（中低配）/ 骁龙8295（顶配）</td>
+                            <td class="py-3 px-4">多为低端芯片或方案不明</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">屏幕规格</td>
+                            <td class="py-3 px-4 font-bold text-primary">14.6英寸 + 2.5K分辨率</td>
+                            <td class="py-3 px-4">多为10-12英寸，720P分辨率</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">手机互联</td>
+                            <td class="py-3 px-4 font-bold text-primary">HUAWEI HiCar + Carlink（全系标配）</td>
+                            <td class="py-3 px-4">部分支持CarPlay或封闭生态</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">语音交互</td>
+                            <td class="py-3 px-4 font-bold text-primary">分区唤醒 + 连续性识别 + 可见即可说（顶配）</td>
+                            <td class="py-3 px-4">基础语音控制</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">OTA升级</td>
+                            <td class="py-3 px-4 font-bold text-primary">支持</td>
+                            <td class="py-3 px-4">部分支持或不支持</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- 座舱展示 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://p11-doubao-search-sign.byteimg.com/labis/image/9fad756b245b950bd3ef6facc051acc9~tplv-be4g95zd3a-image.jpeg?lk3s=feb11e32&amp;x-expires=1790473169&amp;x-signature=6DnVtvoa5HezaXEwq%2FgJwpak4BU%3D" alt="零跑A10内饰" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold mb-2">零跑A10内饰</h4>
+                        <p class="text-gray-700">14.6英寸2.5K中控屏 + 8.88英寸液晶仪表，搭载Leapmotor OS交互系统</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://p3-doubao-search-sign.byteimg.com/labis/image/4fafab76b5889bc54779004d5dd62607~tplv-be4g95zd3a-image.jpeg?lk3s=feb11e32&amp;x-expires=1790473169&amp;x-signature=uXSIMnmqNiqpzoHqkMbci%2FoRnNc%3D" alt="零跑A10智能座舱" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold mb-2">智能座舱系统</h4>
+                        <p class="text-gray-700">接入通义千问AI语音大模型，支持多模态识别、文生图创意、全场景可见即可说</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">3.3 实用配置：全系标配的"诚意"</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-plug text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">VTOL外放电</h4>
+                    </div>
+                    <p class="text-gray-700">6.58万入门即标配3.3kW外放电，对比比亚迪元UP（9.98万才标配）诚意十足</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-hand-paper-o text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">电子怀挡+自动驻车</h4>
+                    </div>
+                    <p class="text-gray-700">提升日常用车便利性的基础配置全系标配</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-expand text-accent text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">空间灵活性</h4>
+                    </div>
+                    <p class="text-gray-700">4270mm车长+2605mm轴距，配合40:60放倒后排，储物空间602-1549L优于多数竞品</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">3.4 续航与效率的平衡</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">版本</th>
+                            <th class="py-3 px-4 text-left">续航(CLTC)</th>
+                            <th class="py-3 px-4 text-left">价格</th>
+                            <th class="py-3 px-4 text-left">快充时间(30-80%)</th>
+                            <th class="py-3 px-4 text-left">百公里电耗</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">403舒享版</td>
+                            <td class="py-3 px-4">403km</td>
+                            <td class="py-3 px-4">6.58万</td>
+                            <td class="py-3 px-4">0.5h</td>
+                            <td class="py-3 px-4">10.7kWh</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">403悦享版</td>
+                            <td class="py-3 px-4">403km</td>
+                            <td class="py-3 px-4">6.98万</td>
+                            <td class="py-3 px-4">0.5h</td>
+                            <td class="py-3 px-4">10.7kWh</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">505悦享版</td>
+                            <td class="py-3 px-4">505km</td>
+                            <td class="py-3 px-4">7.68万</td>
+                            <td class="py-3 px-4">0.27h</td>
+                            <td class="py-3 px-4">11.3kWh</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">505激光雷达版</td>
+                            <td class="py-3 px-4">505km</td>
+                            <td class="py-3 px-4">8.68万</td>
+                            <td class="py-3 px-4">0.27h</td>
+                            <td class="py-3 px-4">11.3kWh</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="highlight-box">
+                <p class="text-gray-700"><strong>优势：</strong>505km版本将500km+续航门槛拉至8万以内，电耗11.3kWh/100km属于优秀水平；快充0.27h（约16分钟）快于同价位车型。</p>
+            </div>
+            
+
+        </section>
+
+        <!-- 市场竞争格局与展望 -->
+        <section id="market-outlook" class="mb-12">
+            <h2 class="section-title">四、市场竞争格局与展望</h2>
+            
+            <h3 class="subsection-title">4.1 当前格局：改写"入门级=低智能"的行业规则</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-700">市场现状分析</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fa fa-circle text-primary mt-1 mr-2"></i>
+                            <span><strong>6-9万级市场</strong>长期被"老头乐升级版"占据，消费者被迫在"低价"和"智能"间二选一</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-circle text-primary mt-1 mr-2"></i>
+                            <span><strong>比亚迪元UP</strong>凭借品牌优势领跑，但9.98万才401km且智驾缺失，给A10留下价格缝隙</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-circle text-primary mt-1 mr-2"></i>
+                            <span><strong>五菱缤果PLUS</strong>主打空间大但智能化薄弱，与A10形成差异化竞争</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-700">零跑A10的战略卡位</h4>
+                    <ol class="space-y-3 text-gray-700 list-decimal list-inside">
+                        <li class="flex items-start">
+                            <span><strong>技术下沉：</strong>用全域自研将高阶智驾成本压缩60%，建立<strong>"8万级智驾天花板"</strong>认知</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span><strong>配置锚定：</strong>通过14.6英寸大屏、骁龙芯片等显性配置，让消费者产生"物超所值"的感知</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span><strong>续航分层：</strong>403km版本拉低门槛（6.58万起），505km版本满足主流需求，激光雷达版树立技术标杆</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">4.2 未来展望：机遇与挑战并存</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- 增长机遇 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-green-100 p-4">
+                        <h4 class="text-xl font-bold text-green-700 flex items-center">
+                            <i class="fa fa-thumbs-up mr-2"></i>
+                            增长机遇
+                        </h4>
+                    </div>
+                    <div class="p-6">
+                        <table class="w-full">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">智驾普及化趋势</td>
+                                    <td class="py-3 text-gray-700">随着消费者对NOA认知提升，A10将是年轻人"第一台智驾车"的首选</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">下沉市场爆发</td>
+                                    <td class="py-3 text-gray-700">三四线城市充电设施完善，8万级纯电SUV替代燃油车的窗口期已至</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">出海潜力</td>
+                                    <td class="py-3 text-gray-700">此价位的高配置车型在东南亚、拉美市场具备极强竞争力</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- 潜在风险 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-red-100 p-4">
+                        <h4 class="text-xl font-bold text-red-700 flex items-center">
+                            <i class="fa fa-exclamation-triangle mr-2"></i>
+                            潜在风险
+                        </h4>
+                    </div>
+                    <div class="p-6">
+                        <table class="w-full">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">盈利压力</td>
+                                    <td class="py-3 text-gray-700">8万级搭载激光雷达+8295芯片，毛利率极低，依赖规模效应摊薄成本</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">品牌认知</td>
+                                    <td class="py-3 text-gray-700">零跑在低端市场需避免"廉价"标签，防止伤害中高端车型（C10/C16）的品牌价值</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-medium text-gray-800">交付与服务</td>
+                                    <td class="py-3 text-gray-700">低价高配车型可能面临订单激增，考验供应链和渠道服务能力</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 市场份额预测图表 -->
+            <div class="chart-container mb-8">
+                <h4 class="text-lg font-semibold mb-4 text-gray-700">6-9万级纯电SUV市场份额预测</h4>
+                <canvas id="marketShareChart" height="300"></canvas>
+            </div>
+        </section>
+
+        <!-- 总结 -->
+        <section id="conclusion" class="mb-12">
+            <h2 class="section-title">五、总结</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="flex items-center mb-6">
+                    <img src="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-6w9my0ksvp/b88d7d5f1ed947db97f46f5b42a491b7~tplv-be4g95zd3a-image.jpeg?lk3s=feb11e32&amp;x-expires=1790473169&amp;x-signature=1r4VYPcKF23FiivIdeMDNkwyexs%3D" alt="零跑A10" class="w-32 h-24 object-cover rounded-lg mr-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">科技平权的典范之作</h3>
+                        <p class="text-gray-600">重新定义入门级纯电车的智能标准</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-700 mb-4">零跑A10是<strong class="text-primary">"AI平权"理念在汽车领域的极致实践</strong>——它证明了在8万元价位，消费者不仅可以拥有一辆续航扎实、空间实用的代步车，还能获得8295芯片驱动的智能座舱和激光雷达加持的高阶智驾。</p>
+                
+                <p class="text-gray-700 mb-4">这款车的出现，将迫使比亚迪、五菱等竞品重新思考入门市场的配置逻辑，可能引发6-10万级市场的<strong class="text-primary">"智驾军备竞赛"</strong>，最终加速中国新能源汽车的全面智能化普及。</p>
+                
+                <div class="highlight-box mt-6">
+                    <p class="text-gray-700 text-lg font-medium"><strong>对于消费者而言，A10的出现意味着"预算有限"不再等同于"体验降级"。</strong></p>
+                </div>
+            </div>
+        </section>
+        
+       
+    </main>
+
+    <!-- 页脚 -->
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 点击菜单项后关闭菜单
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // 点击页面其他地方关闭菜单
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+
+    <!-- 奇瑞QQ3市场分析报告 -->
+    <section id="qq3-overview" class="mb-12 pt-12 border-t-2 border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="mb-10">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-shadow">奇瑞QQ3 EV 2026款 市场分析报告</h1>
+                        <p class="text-lg md:text-xl mb-6 opacity-90">A0级市场的"配置革命者"</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">2026年3月30日发布</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">科技平权</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">17分钟快充</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">5.89万起售</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">纯电小车</span>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex items-center justify-center p-4">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/6dc65e12850e4aa2a467055051298535~tplv-a9rns2rl98-image.image?lk3s=8e244e95&amp;rcl=202603311056545A56E2FEA1933A30BE00&amp;rrcfp=e75484ac&amp;x-expires=1775530614&amp;x-signature=B9pTZ3xj1MpzkIQv7TaWLaRxOCY%3D" alt="奇瑞QQ3外观" class="rounded-lg shadow-lg max-h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- QQ3概览卡片 -->
+        <section class="mb-12">
+            <h2 class="section-title">概览</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">价格区间</h3>
+                        <i class="fa fa-tag text-primary text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-primary">5.89-7.89万</p>
+                    <p class="text-gray-500 mt-2">4个版本覆盖不同需求</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">续航里程</h3>
+                        <i class="fa fa-bolt text-secondary text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-secondary">310-420km</p>
+                    <p class="text-gray-500 mt-2">CLTC综合工况续航</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">快充时间</h3>
+                        <i class="fa fa-flash text-accent text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-accent">17分钟</p>
+                    <p class="text-gray-500 mt-2">30%-80%（420km版本）</p>
+                </div>
+                <div class="data-card card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-700">轴距</h3>
+                        <i class="fa fa-arrows-h text-chart-5 text-xl"></i>
+                    </div>
+                    <p class="text-3xl font-bold text-chart-5">2700mm</p>
+                    <p class="text-gray-500 mt-2">超越同级竞品200mm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3目标人群画像 -->
+        <section class="mb-12">
+            <h2 class="section-title">一、目标人群画像：务实年轻派的三类切片</h2>
+            
+            <h3 class="subsection-title">1.1 核心用户群体</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">人群标签</th>
+                            <th class="py-3 px-4 text-left">画像描述</th>
+                            <th class="py-3 px-4 text-left">核心需求</th>
+                            <th class="py-3 px-4 text-left">QQ3匹配点</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">首购青年</td>
+                            <td class="py-3 px-4">95后-00后，预算6-8万，首台代步车</td>
+                            <td class="py-3 px-4">低门槛、低电耗、够智能</td>
+                            <td class="py-3 px-4 font-bold text-primary">5.89万起售价 + 终身质保</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">家庭增购宝妈</td>
+                            <td class="py-3 px-4">已有燃油车，需第二台车接送/购物</td>
+                            <td class="py-3 px-4">空间大、安全、好停车</td>
+                            <td class="py-3 px-4 font-bold text-primary">2700mm轴距（超海鸥200mm）+ 5门5座</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">轻户外爱好者</td>
+                            <td class="py-3 px-4">周末露营、摆摊、短途自驾</td>
+                            <td class="py-3 px-4">外放电、续航扎实、通过性</td>
+                            <td class="py-3 px-4 font-bold text-primary">6.6kW外放电 + 420km续航 + 17分钟快充</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">1.2 用户决策关键要素</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-bolt text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">续航分层策略</h4>
+                    </div>
+                    <p class="text-gray-700">310km（城市通勤）vs 420km（城际出行+快充17分钟）</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-microchip text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">智能体验可选项</h4>
+                    </div>
+                    <p class="text-gray-700">基础版保留手机互联，分享版提供8155芯片，避免"强买强卖"</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-shield text-accent text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">持有成本焦虑</h4>
+                    </div>
+                    <p class="text-gray-700">整车+电池<strong>终身质保</strong>（首任车主），对比竞品8年/15万公里质保</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3竞品对标矩阵 -->
+        <section class="mb-12">
+            <h2 class="section-title">二、竞品对标矩阵：错位竞争策略</h2>
+            
+            <h3 class="subsection-title">2.1 核心参数对比</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">参数</th>
+                            <th class="py-3 px-4 text-center font-bold text-primary">奇瑞QQ3 EV 2026款 420分享版</th>
+                            <th class="py-3 px-4 text-center">比亚迪海鸥 2025款 智驾版 405KM 飞翔版</th>
+                            <th class="py-3 px-4 text-center">五菱缤果2025款 410km 灵犀尊享款</th>
+                            <th class="py-3 px-4 text-center">吉利星愿 2026款 410km 探索版</th>
+                            <th class="py-3 px-4 text-center">名爵MG4 2026款 530 智趣版</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">指导价</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">7.89万</td>
+                            <td class="py-3 px-4 text-center">8.58万</td>
+                            <td class="py-3 px-4 text-center">8.48万</td>
+                            <td class="py-3 px-4 text-center">8.78万</td>
+                            <td class="py-3 px-4 text-center">9.38万</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智驾芯片</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">地平线J6E</td>
+                            <td class="py-3 px-4 text-center">NVIDIA DRIVE Orin N</td>
+                            <td class="py-3 px-4 text-center">/</td>
+                            <td class="py-3 px-4 text-center">/</td>
+                            <td class="py-3 px-4 text-center">地平线J6E</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智舱芯片</td>
+                            <td class="py-3 px-4 text-center">8155</td>
+                            <td class="py-3 px-4 text-center">低于8155</td>
+                            <td class="py-3 px-4 text-center">/</td>
+                            <td class="py-3 px-4 text-center">亿咖通E02</td>
+                            <td class="py-3 px-4 text-center">8155</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">摄像头</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">4</td>
+                            <td class="py-3 px-4 text-center">12</td>
+                            <td class="py-3 px-4 text-center">4</td>
+                            <td class="py-3 px-4 text-center">6</td>
+                            <td class="py-3 px-4 text-center">6</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">毫米波雷达</td>
+                            <td class="py-3 px-4 text-center">3</td>
+                            <td class="py-3 px-4 text-center">5</td>
+                            <td class="py-3 px-4 text-center">0</td>
+                            <td class="py-3 px-4 text-center">0</td>
+                            <td class="py-3 px-4 text-center">3</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">NOA功能</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">高速NOA</td>
+                            <td class="py-3 px-4 text-center">高速NOA</td>
+                            <td class="py-3 px-4 text-center">自适应巡航</td>
+                            <td class="py-3 px-4 text-center">全速自适应巡航</td>
+                            <td class="py-3 px-4 text-center">高速NOA</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">自动泊车</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">辅助泊车+记忆泊车</td>
+                            <td class="py-3 px-4 text-center">辅助泊车</td>
+                            <td class="py-3 px-4 text-center">无</td>
+                            <td class="py-3 px-4 text-center">无</td>
+                            <td class="py-3 px-4 text-center">全场景泊车</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">屏幕</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">15.6</td>
+                            <td class="py-3 px-4 text-center">15.6</td>
+                            <td class="py-3 px-4 text-center">10.25</td>
+                            <td class="py-3 px-4 text-center">14.6</td>
+                            <td class="py-3 px-4 text-center">15.6</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">音区</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">主驾+副驾</td>
+                            <td class="py-3 px-4 text-center">主驾+副驾</td>
+                            <td class="py-3 px-4 text-center">主驾+副驾</td>
+                            <td class="py-3 px-4 text-center">主驾+副驾</td>
+                            <td class="py-3 px-4 text-center">主驾+副驾</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">扬声器</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">6</td>
+                            <td class="py-3 px-4 text-center">4</td>
+                            <td class="py-3 px-4 text-center">4</td>
+                            <td class="py-3 px-4 text-center">6</td>
+                            <td class="py-3 px-4 text-center">6</td>
+                        </tr>
+                      <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">座椅加热通风</td>
+                            <td class="py-3 px-4 text-center font-bold text-primary">主驾加热通风，副驾选配</td>
+                            <td class="py-3 px-4 text-center">前排加热</td>
+                            <td class="py-3 px-4 text-center">无</td>
+                            <td class="py-3 px-4 text-center">前排加热</td>
+                            <td class="py-3 px-4 text-center">前排加热通风</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">2.2 竞争力雷达图维度</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-expand text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">空间降维</h4>
+                    </div>
+                    <p class="text-gray-700">4195mm车长接近A级车，375-1450L后备厢碾压A00级竞品</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-flash text-secondary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">快充领先</h4>
+                    </div>
+                    <p class="text-gray-700">2.11C倍率30-80%仅0.28小时，行业同级最快</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-car text-accent text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">操控优势</h4>
+                    </div>
+                    <p class="text-gray-700">后置后驱+多连杆独立后悬，驾驶质感优于前驱竞品</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3智能座舱 -->
+        <section class="mb-12">
+            <h2 class="section-title">三、智能座舱：8155芯片的下沉革命 ⭐</h2>
+            
+            <h3 class="subsection-title">3.1 配置分层策略（精准刀法）</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">版本</th>
+                            <th class="py-3 px-4 text-center">价格</th>
+                            <th class="py-3 px-4 text-left">智舱配置</th>
+                            <th class="py-3 px-4 text-left">目标人群</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">310热爱版</td>
+                            <td class="py-3 px-4 text-center">5.89万</td>
+                            <td class="py-3 px-4">12.8英寸屏 + Sugar OS + 手机互联</td>
+                            <td class="py-3 px-4">仅需CarPlay/HiCar的务实用户</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">310分享版</td>
+                            <td class="py-3 px-4 text-center">6.79万</td>
+                            <td class="py-3 px-4 font-bold text-primary">15.6英寸2.5K屏 + 高通8155 + 哨兵模式</td>
+                            <td class="py-3 px-4">追求流畅体验的年轻群体</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">420热爱版</td>
+                            <td class="py-3 px-4 text-center">6.89万</td>
+                            <td class="py-3 px-4">12.8英寸屏 + 8.8英寸仪表</td>
+                            <td class="py-3 px-4">续航优先的理性用户</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">420分享版</td>
+                            <td class="py-3 px-4 text-center">7.89万</td>
+                            <td class="py-3 px-4 font-bold text-primary">15.6英寸2.5K屏 + 8155 + 后排Type-C</td>
+                            <td class="py-3 px-4">科技+续航双需求用户</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">3.2 座舱竞争力分析</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">优势项</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>芯片越级</strong>：6-8万级搭载<strong>高通骁龙8155</strong>，保证3-5年系统流畅度（海鸥/缤果均未配备）</li>
+                        <li><i class="fa fa-check-circle text-red-500 mr-2"></i><strong>生态开放</strong>：<strong>HiCar + CarPlay + Carlink</strong>三端兼容，覆盖100%手机用户，无生态绑架</li>
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>交互细节</strong>：语音分区域唤醒（主/副驾独立识别）、"嗨小奇"唤醒词 + 可见即可说</li>
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i>310版本标配<strong>K歌功能</strong>（精准击中年轻娱乐需求）</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">遗憾项</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-times-circle text-gray-400 mr-2"></i>5G网络缺失（全系4G），OTA升级速度受限</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3智能驾驶 -->
+        <section class="mb-12">
+            <h2 class="section-title">四、智能驾驶：灵活选装的"L2民主化"</h2>
+            
+            <h3 class="subsection-title">4.1 智驾能力分层</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-shield text-gray-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">基础安全层（全系标配）</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check text-gray-600 mr-2"></i>主动安全：ABS+EBD+ESP+TCS+刹车辅助+疲劳驾驶提示</li>
+                        <li><i class="fa fa-check text-gray-600 mr-2"></i>辅助功能：倒车影像+定速巡航+自动驻车+陡坡缓降</li>
+                        <li><i class="fa fa-check text-gray-600 mr-2"></i>硬件基础：4超声波雷达（310版）/ 8超声波雷达（420版）</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-car text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">进阶层（分享版标配）</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check text-blue-600 mr-2"></i>360°全景影像</li>
+                        <li><i class="fa fa-check text-blue-600 mr-2"></i>透明底盘</li>
+                        <li><i class="fa fa-check text-blue-600 mr-2"></i>车侧盲区影像</li>
+                        <li><i class="fa fa-check text-blue-600 mr-2"></i>窄路辅助</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-microchip text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">高阶智驾层（智享升级包，9000元选装）</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check text-primary mr-2"></i>猎鹰500智能驾驶辅助（推测地平线征程3或同级）</li>
+                        <li><i class="fa fa-check text-primary mr-2"></i>车道偏离预警 + 车道保持 + 车道居中</li>
+                        <li><i class="fa fa-check text-primary mr-2"></i>前/后碰撞预警 + 主动刹车</li>
+                        <li><i class="fa fa-check text-primary mr-2"></i>并线辅助 + 自动变道辅助</li>
+                        <li><i class="fa fa-check text-primary mr-2"></i>DOW开门预警 + 倒车车侧预警</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">4.2 智驾策略评价</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">策略亮点</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-star text-yellow-500 mr-2"></i><strong>不强制捆绑</strong>：基础版保持低价，高阶功能按需购买（海鸥智驾版差价约1.5万，QQ3仅0.9万）</li>
+                        <li><i class="fa fa-star text-yellow-500 mr-2"></i><strong>硬件预埋</strong>：分享版标配4/5个摄像头+8雷达，为后续OTA留空间</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">策略遗憾</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-exclamation-circle text-orange-500 mr-2"></i><strong>自动泊车非标配</strong>：支持选装（3000元）</li>
+                        <li><i class="fa fa-exclamation-circle text-orange-500 mr-2"></i><strong>选装包门槛</strong>：9000元对于6万级用户仍是一笔不小的开支，可能影响选装率</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3差异化优势总结 -->
+        <section class="mb-12">
+            <h2 class="section-title">五、差异化优势总结</h2>
+            
+            <h3 class="subsection-title">5.1 核心卖点金字塔</h3>
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 flex flex-col items-center">
+                <div class="text-center mb-4">
+                    <p class="text-lg font-semibold text-gray-800">终身质保（信任基石）</p>
+                </div>
+                <div class="w-0.5 h-8 bg-gray-300"></div>
+                <div class="text-center mb-4">
+                    <p class="text-lg font-semibold text-gray-800">17分钟快充 + 6.6kW外放电（实用利器）</p>
+                </div>
+                <div class="w-0.5 h-8 bg-gray-300"></div>
+                <div class="text-center mb-4">
+                    <p class="text-lg font-semibold text-gray-800">2700mm轴距 + 后置后驱（体验升级）</p>
+                </div>
+                <div class="w-0.5 h-8 bg-gray-300"></div>
+                <div class="text-center mb-4">
+                    <p class="text-lg font-semibold text-gray-800">8155芯片（分享版）+ 猎鹰500智驾（选装）（科技平权）</p>
+                </div>
+                <div class="w-0.5 h-8 bg-gray-300"></div>
+                <div class="text-center">
+                    <p class="text-xl font-bold text-primary">5.89万起售价（价格锚点）</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">5.2 护城河</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-microchip text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">6万级8155</h4>
+                    </div>
+                    <p class="text-gray-700">智能座舱流畅度领先同级一代</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-flash text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">17分钟快充</h4>
+                    </div>
+                    <p class="text-gray-700">2.11C倍率解决续航焦虑，使420km版本具备长途能力</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-car text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">大车小价</h4>
+                    </div>
+                    <p class="text-gray-700">A级车空间卖A00级价格，后排可装儿童座椅+行李</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-plug text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">外放电功率分级</h4>
+                    </div>
+                    <p class="text-gray-700">420版本6.6kW可带动电磁炉+电烤炉 simultaneously（竞品多为3.3kW）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3市场竞争格局与展望 -->
+        <section class="mb-12">
+            <h2 class="section-title">六、市场竞争格局与展望</h2>
+            
+            <h3 class="subsection-title">6.1 2026年A0级市场格局</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">竞争梯队</th>
+                            <th class="py-3 px-4 text-left">代表车型</th>
+                            <th class="py-3 px-4 text-center">价格带</th>
+                            <th class="py-3 px-4 text-center">威胁指数</th>
+                            <th class="py-3 px-4 text-left">QQ3应对策略</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">霸主级</td>
+                            <td class="py-3 px-4">比亚迪海鸥</td>
+                            <td class="py-3 px-4 text-center">7-9万</td>
+                            <td class="py-3 px-4 text-center">★★★★★</td>
+                            <td class="py-3 px-4">以5.89万低价+大空间分流预算敏感用户</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">颜值派</td>
+                            <td class="py-3 px-4">五菱缤果</td>
+                            <td class="py-3 px-4 text-center">6-9万</td>
+                            <td class="py-3 px-4 text-center">★★★☆☆</td>
+                            <td class="py-3 px-4">以快充+智舱科技碾压智能化短板</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">新秀级</td>
+                            <td class="py-3 px-4">吉利星愿</td>
+                            <td class="py-3 px-4 text-center">7-10万</td>
+                            <td class="py-3 px-4 text-center">★★★★☆</td>
+                            <td class="py-3 px-4">以8155芯片对抗魅族生态，以低价抢份额</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">性价比</td>
+                            <td class="py-3 px-4">零跑T03</td>
+                            <td class="py-3 px-4 text-center">5-8万</td>
+                            <td class="py-3 px-4 text-center">★★☆☆☆</td>
+                            <td class="py-3 px-4">以空间+品牌力压制</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">6.2 智能化趋势适配度</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">行业趋势</th>
+                            <th class="py-3 px-4 text-left">QQ3现状</th>
+                            <th class="py-3 px-4 text-center">竞争力评级</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智舱普及化</td>
+                            <td class="py-3 px-4">8155下放至6万级</td>
+                            <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">智驾分层化</td>
+                            <td class="py-3 px-4">L2功能选装，基础功能标配</td>
+                            <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">快充高压化</td>
+                            <td class="py-3 px-4">2.11C倍率，17分钟30-80%</td>
+                            <td class="py-3 px-4 text-center">⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">外放电刚需化</td>
+                            <td class="py-3 px-4">6.6kW功率行业领先</td>
+                            <td class="py-3 px-4 text-center">⭐⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">6.3 风险提示与战略建议</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">潜在风险</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-exclamation-triangle text-orange-500 mr-2"></i><strong>渠道短板</strong>：奇瑞新能源渠道覆盖弱于比亚迪/五菱，下沉市场触达不足</li>
+                        <li><i class="fa fa-exclamation-triangle text-orange-500 mr-2"></i><strong>品牌重塑</strong>：QQ品牌"复古"标签需强化"新QQ科技"认知</li>
+                        <li><i class="fa fa-exclamation-triangle text-orange-500 mr-2"></i><strong>选装率不确定</strong>：若智驾选装率&lt;20%，高阶功能数据迭代困难</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">战略建议</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-lightbulb-o text-yellow-500 mr-2"></i><strong>营销聚焦"智舱平权"</strong>：突出"6万买8155"概念，吸引男性科技爱好者</li>
+                        <li><i class="fa fa-lightbulb-o text-yellow-500 mr-2"></i><strong>场景化种草</strong>：利用6.6kW外放电主打"露营伴侣"，与高端车型形成传播联动</li>
+                        <li><i class="fa fa-lightbulb-o text-yellow-500 mr-2"></i><strong>选装包优化</strong>：考虑将"智享升级包"拆分销售（如仅购买智驾功能5000元），降低决策门槛</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 竞品深度对比 -->
+        <section class="mb-12">
+            <h2 class="section-title">七、竞品深度对比：QQ3 vs MG4 vs 吉利星愿</h2>
+            
+            
+            <h3 class="subsection-title">7.1 差异化定位分析</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-rocket text-purple-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">MG4 EV：技术硬核派</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check-circle text-purple-600 mr-2"></i><strong>半固态电池</strong>：10万级唯一搭载，冬季续航衰减更低</li>
+                        <li><i class="fa fa-check-circle text-purple-600 mr-2"></i><strong>CTB技术</strong>：电池车身一体化，空间利用率极高</li>
+                        <li><i class="fa fa-check-circle text-purple-600 mr-2"></i><strong>动力越级</strong>：120kW电机，0-50km/h仅3.8秒</li>
+                        <li><i class="fa fa-check-circle text-purple-600 mr-2"></i><strong>智驾激进</strong>：高配提供高速NOA领航辅助</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600 text-sm">目标人群：追求驾驶质感、续航扎实、技术尝鲜的年轻男性用户</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-mobile text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">吉利星愿：生态智能派</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check-circle text-blue-600 mr-2"></i><strong>Flyme Auto生态</strong>：与魅族手机无缝流转</li>
+                        <li><i class="fa fa-check-circle text-blue-600 mr-2"></i><strong>渠道下沉</strong>：全国超1000家经销商覆盖</li>
+                        <li><i class="fa fa-check-circle text-blue-600 mr-2"></i><strong>场景化功能</strong>：宠物模式、露营模式等</li>
+                        <li><i class="fa fa-check-circle text-blue-600 mr-2"></i><strong>品牌认知</strong>："国民品牌"心智强</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600 text-sm">目标人群：注重智能互联、品牌可靠性、售后便利性的家庭用户</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-bolt text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-800">奇瑞QQ3：性价比实用派</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>价格锚点</strong>：5.89万起售价，比竞品低7000-10000元</li>
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>智驾灵活度</strong>：猎鹰500智驾包价格更低，不强制捆绑</li>
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>外放电领先</strong>：6.6kW功率，露营场景实用性最强</li>
+                        <li><i class="fa fa-check-circle text-primary mr-2"></i><strong>快充速度</strong>：17分钟30-80%，比竞品都更快</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600 text-sm">目标人群：预算敏感、追求实用配置的理性消费者</p>
+                </div>
+            </div>
+            
+            <h3 class="subsection-title">7.3 智能座舱专项对比</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">功能维度</th>
+                            <th class="py-3 px-4 text-left">奇瑞QQ3 分享版</th>
+                            <th class="py-3 px-4 text-left">全新MG4</th>
+                            <th class="py-3 px-4 text-left">吉利星愿</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">系统</td>
+                            <td class="py-3 px-4">Sugar OS</td>
+                            <td class="py-3 px-4">SAIC OS</td>
+                            <td class="py-3 px-4 font-bold text-blue-600" style="color: rgba(3, 3, 3, 0.98);">Flyme Auto</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">芯片</td>
+                            <td class="py-3 px-4 font-bold text-primary">8155</td>
+                            <td class="py-3 px-4 font-bold">8155</td>
+                            <td class="py-3 px-4">亿咖通E02</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">屏幕</td>
+                            <td class="py-3 px-4">15.6英寸2.5K</td>
+                            <td class="py-3 px-4">15.6英寸</td>
+                            <td class="py-3 px-4 font-bold text-blue-600" style="color: rgb(5, 5, 5); font-weight: normal;">14.6英寸悬浮屏</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">手机互联</td>
+                            <td class="py-3 px-4 font-bold text-primary">HiCar+CarPlay+Carlink</td>
+                            <td class="py-3 px-4">CarLink+HiCar</td>
+                            <td class="py-3 px-4 font-bold text-blue-600" style="color: rgb(5, 5, 5); font-weight: normal;">Flyme Link+华为HiCar</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">特色功能</td>
+                            <td class="py-3 px-4">K歌、哨兵模式</td>
+                            <td class="py-3 px-4" style="color: rgba(56, 109, 242, 0.98); font-weight: bold;">全场景补盲、手车互联</td>
+                            <td class="py-3 px-4 font-bold text-blue-600">宠物模式、无界空间</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">生态扩展</td>
+                            <td class="py-3 px-4">应用商店</td>
+                            <td class="py-3 px-4">应用商店</td>
+                            <td class="py-3 px-4 font-bold text-blue-600">魅族生态无缝流转</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">7.4 智能驾驶专项对比</h3>
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full bg-white rounded-lg shadow-md">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="py-3 px-4 text-left">能力层级</th>
+                            <th class="py-3 px-4 text-left">奇瑞QQ3（选装）</th>
+                            <th class="py-3 px-4 text-left">全新MG4（高配）</th>
+                            <th class="py-3 px-4 text-left">吉利星愿（高配可选）</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">基础安全</td>
+                            <td class="py-3 px-4">ABS/ESP/胎压报警/定速巡航（全系标配）</td>
+                            <td class="py-3 px-4">同左</td>
+                            <td class="py-3 px-4">同左</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">辅助影像</td>
+                            <td class="py-3 px-4">360°全景+透明底盘（分享版标配）</td>
+                            <td class="py-3 px-4 font-bold text-purple-600">540°全景+AI补盲</td>
+                            <td class="py-3 px-4">360°全景</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">预警系统</td>
+                            <td class="py-3 px-4">车道偏离/碰撞预警（选装）</td>
+                            <td class="py-3 px-4 font-bold text-purple-600">标配+道路交通识别</td>
+                            <td class="py-3 px-4">选配</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">高阶智驾</td>
+                            <td class="py-3 px-4">猎鹰500（L2级）<br>含主动刹车/并线辅助</td>
+                            <td class="py-3 px-4 font-bold text-purple-600">高速NOA（L2.5级）<br>含自动变道/自动泊车</td>
+                            <td class="py-3 px-4">L2级辅助<br>（功能较基础）</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 font-medium">选装价格</td>
+                            <td class="py-3 px-4 font-bold text-primary">9000元</td>
+                            <td class="py-3 px-4">顶配标配（约9.38万）</td>
+                            <td class="py-3 px-4">未公布具体价格</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="subsection-title">7.5 市场竞争格局研判</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">三角攻防关系</h4>
+                    <div class="space-y-4 text-gray-700">
+                        <p><strong>MG4优势区：</strong>技术光环（半固态电池）、动力性能、智驾先进性</p>
+                        <p><strong>星愿优势区：</strong>生态整合（Flyme Auto）、渠道覆盖、品牌认知</p>
+                        <p><strong>QQ3优势区：</strong>价格门槛、快充速度、外放电功率、配置灵活性</p>
+                        <p><strong>竞争焦点：</strong>8万级A0市场形成"三国杀"格局，各有所长，用户选择更加分化</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h4 class="text-xl font-semibold mb-4 text-gray-800">QQ3的机会与挑战</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="font-medium text-green-600 mb-2">机会窗口：</h5>
+                            <ul class="space-y-1 text-gray-700">
+                                <li><i class="fa fa-arrow-right text-green-600 mr-2"></i>5.89-6.58万价格真空带无竞品覆盖</li>
+                                <li><i class="fa fa-arrow-right text-green-600 mr-2"></i>17分钟快充比竞品都更快</li>
+                                <li><i class="fa fa-arrow-right text-green-600 mr-2"></i>6.6kW外放电在6-8万级唯一</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-medium text-orange-600 mb-2">风险挑战：</h5>
+                            <ul class="space-y-1 text-gray-700">
+                                <li><i class="fa fa-arrow-right text-orange-600 mr-2"></i>MG4半固态电池技术光环强</li>
+                                <li><i class="fa fa-arrow-right text-orange-600 mr-2"></i>星愿渠道密度是奇瑞2-3倍</li>
+                                <li><i class="fa fa-arrow-right text-orange-600 mr-2"></i>QQ品牌"复古"标签需重塑</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QQ3结论 -->
+        <section class="mb-12">
+            <h2 class="section-title">八、结论</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <p class="text-lg text-gray-700 mb-4">奇瑞QQ3 EV 2026款是<strong class="text-primary">A0级市场的"配置革命者"</strong>。其成功关键在于<strong>拒绝"为了低价而全面阉割"</strong>，而是通过精准的配置分层，让<strong>310热爱版</strong>成为"6万级守门员"，<strong>420分享版</strong>成为"8万级科技标杆"。</p>
+                <p class="text-lg text-gray-700 mb-4">在智能座舱与智能驾驶两大核心战场，QQ3采取了<strong>"基础功能标配保证安全，高阶功能选装满足先锋用户"</strong>的灵活策略，既守住了价格底线，又实现了科技平权。</p>
+                <p class="text-lg font-semibold text-primary">预计月销可突破<strong>8000-10000台</strong>，成为2026年纯电小车市场最具冲击力的"破局者"。</p>
+            </div>
+        </section>
+        </div>
+    </section>
+
+    <!-- 长城坦克700分析 -->
+    <section id="tank700-overview" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-xl shadow-lg overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-shadow">长城坦克700系列 2026年款 市场分析报告</h1>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">2026年3月30日发布</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">新能源硬派越野</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">智能化突破</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">43.8-47.8万级市场</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">Hi4-Z/Hi4-T双动力</span>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex items-center justify-center p-4">
+                        <img src="https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/43ade9619a8145c9b24565d3ac405a4a~tplv-a9rns2rl98-image.image?lk3s=8e244e95&amp;rcl=20260331134410F1D7E2617F06070293C1&amp;rrcfp=e75484ac&amp;x-expires=1775540650&amp;x-signature=fnTO%2FXmako%2BMv1xqyV7Mv4xNhEw%3D" alt="长城坦克700 Hi4-Z" class="rounded-lg shadow-lg max-h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 研究背景与目标 -->
+            <section class="mb-12">
+                <h2 class="section-title">一、研究背景与目标</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-lg text-gray-700 mb-4">2026年3月30日，长城汽车正式发布<strong class="text-primary">全新坦克700 Hi4-Z</strong>，标志着中国硬派越野市场进入<strong>"新能源+智能化"</strong>的新阶段。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">本研究聚焦：</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fa fa-check-circle text-primary mr-3"></i>坦克700系列产品创新、市场表现及技术突破</li>
+                        <li><i class="fa fa-check-circle text-primary mr-3"></i>结合2025年财报数据，分析其在公司战略中的地位</li>
+                        <li><i class="fa fa-check-circle text-primary mr-3"></i>预测2026年关键领域布局方向</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 坦克700 Hi4-Z概览 -->
+            <section class="mb-12">
+                <h2 class="section-title">二、坦克700 Hi4-Z：智能豪华新能源越野新标杆</h2>
+                
+                <h3 class="subsection-title">2.1 动力系统革命性突破</h3>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full bg-white rounded-lg shadow-md">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">性能指标</th>
+                                <th class="py-3 px-4 text-left">数据</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">系统综合功率</td>
+                                <td class="py-3 px-4 font-bold text-primary">715kW</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">峰值扭矩</td>
+                                <td class="py-3 px-4 font-bold text-primary">1195N·m</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">零百加速</td>
+                                <td class="py-3 px-4 font-bold text-primary">4秒级</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">综合续航里程</td>
+                                <td class="py-3 px-4">1191km</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">电池容量</td>
+                                <td class="py-3 px-4">59.05kWh三元锂电池组</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">纯电续航</td>
+                                <td class="py-3 px-4">190km（WLTC）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">馈电油耗</td>
+                                <td class="py-3 px-4">8.45L/100km</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">综合油耗</td>
+                                <td class="py-3 px-4">1.16L/100km</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">快充能力</td>
+                                <td class="py-3 px-4">800V高压平台，163kW快充，15分钟补能114km</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="subsection-title">2.2 智能驾驶技术全面升级</h3>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                                    <div class="text-3xl font-bold text-primary">27颗</div>
+                                    <div class="text-gray-600">智慧传感器</div>
+                                </div>
+                                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                                    <div class="text-3xl font-bold text-primary">200米</div>
+                                    <div class="text-gray-600">激光雷达探测距离</div>
+                                </div>
+                                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                                    <div class="text-3xl font-bold text-primary">560TOPS</div>
+                                    <div class="text-gray-600">算力</div>
+                                </div>
+                                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                                    <div class="text-3xl font-bold text-primary">端到端</div>
+                                    <div class="text-gray-600">架构</div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="font-semibold mb-3 text-gray-800">核心技术配置：</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fa fa-check-circle text-primary mr-2"></i>首款搭载激光雷达的坦克车型（128线激光雷达）</li>
+                                <li><i class="fa fa-check-circle text-primary mr-2"></i>Coffee Pilot 4.0系统，搭载地平线征程6P智驾芯片</li>
+                                <li><i class="fa fa-check-circle text-primary mr-2"></i>搭载VLA大模型，行业唯一非承载车型智能体</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="subsection-title">2.3 智能座舱体验革新</h3>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h4 class="font-semibold mb-3 text-gray-800">7屏联动架构：</h4>
+                            <ul class="space-y-2 text-gray-700 mb-6">
+                                <li><i class="fa fa-desktop text-primary mr-2"></i>HUD抬头显示</li>
+                                <li><i class="fa fa-tachometer text-primary mr-2"></i>12.3英寸仪表</li>
+                                <li><i class="fa fa-tablet text-primary mr-2"></i>15.6英寸中控屏</li>
+                                <li><i class="fa fa-clock-o text-primary mr-2"></i>时钟屏</li>
+                                <li><i class="fa fa-mirror text-primary mr-2"></i>电子后视镜</li>
+                                <li><i class="fa fa-television text-primary mr-2"></i>后排17.3英寸3K吸顶屏</li>
+                                <li><i class="fa fa-mobile text-primary mr-2"></i>后排7英寸控制屏</li>
+                            </ul>
+
+                            <h4 class="font-semibold mb-3 text-gray-800">影音与舒适配置：</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fa fa-volume-up text-primary mr-2"></i><strong>2440瓦</strong>音响系统</li>
+                                <li><i class="fa fa-music text-primary mr-2"></i><strong>21个扬声器</strong>，杜比全景声7.1.4声道，ANC主动降噪</li>
+                                <li><i class="fa fa-snowflake-o text-primary mr-2"></i><strong>5.4L冷暖冰箱</strong>，温度范围-6℃至50℃，支持四音区语音控制</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">2.4 设计与越野性能</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full bg-white rounded-lg shadow-md">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">参数</th>
+                                    <th class="py-3 px-4 text-left">数值</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">车身尺寸</td>
+                                    <td class="py-3 px-4">5105×2061×1985mm</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">轴距</td>
+                                    <td class="py-3 px-4">3000mm</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">离地间隙</td>
+                                    <td class="py-3 px-4 font-bold text-primary">305mm</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">涉水深度</td>
+                                    <td class="py-3 px-4 font-bold text-primary">900mm</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">接近角</td>
+                                    <td class="py-3 px-4 font-bold text-primary">37.8°</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 font-medium">离去角</td>
+                                    <td class="py-3 px-4 font-bold text-primary">37.6°</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h4 class="font-semibold mb-3 text-gray-800">越野功能：</h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><i class="fa fa-lock text-primary mr-2"></i>三把锁、坦克掉头、蠕行模式</li>
+                            <li><i class="fa fa-truck text-primary mr-2"></i>2500kg拖挂资质</li>
+                        </ul>
+                        
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-gray-800">核心卖点：</h4>
+                            <p class="text-gray-700">坦克700 Hi4-Z完美融合了<strong>硬派越野性能</strong>与<strong>新能源智能科技</strong>，在保持专业越野能力的同时，实现了4秒级的加速性能和豪华智能的驾乘体验。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 坦克700 Hi4-Z vs Hi4-T对比 -->
+            <section class="mb-12">
+                <h2 class="section-title">四、坦克700 Hi4-Z vs Hi4-T 技术差异对比</h2>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full bg-white rounded-lg shadow-md">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">对比维度</th>
+                                <th class="py-3 px-4 text-left font-bold text-primary">坦克700 Hi4-Z</th>
+                                <th class="py-3 px-4 text-left">坦克700 Hi4-T</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">动力架构</td>
+                                <td class="py-3 px-4 font-bold text-primary">2.0T+前后双电机（解耦式电四驱）</td>
+                                <td class="py-3 px-4">3.0T V6+P2电机（机械分时四驱）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">系统综合功率</td>
+                                <td class="py-3 px-4 font-bold text-primary">715kW</td>
+                                <td class="py-3 px-4">385kW</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">峰值扭矩</td>
+                                <td class="py-3 px-4 font-bold text-primary">1195N·m</td>
+                                <td class="py-3 px-4">800N·m（限定版850N·m）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">零百加速</td>
+                                <td class="py-3 px-4 font-bold text-primary">4秒级</td>
+                                <td class="py-3 px-4">5.6秒</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">电池容量</td>
+                                <td class="py-3 px-4 font-bold text-primary">59.05kWh</td>
+                                <td class="py-3 px-4">37.1kWh</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">纯电续航</td>
+                                <td class="py-3 px-4 font-bold text-primary">190km（WLTC）</td>
+                                <td class="py-3 px-4">90km（WLTC）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">智能驾驶</td>
+                                <td class="py-3 px-4 font-bold text-primary">Coffee Pilot 4.0+激光雷达</td>
+                                <td class="py-3 px-4">Coffee Pilot 3（无激光雷达）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">四驱系统</td>
+                                <td class="py-3 px-4">智能四驱+后差速锁</td>
+                                <td class="py-3 px-4 font-bold">三把锁+机械分时四驱</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">越野定位</td>
+                                <td class="py-3 px-4">城市+轻越野</td>
+                                <td class="py-3 px-4 font-bold">硬核越野</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">售价区间</td>
+                                <td class="py-3 px-4 font-bold text-primary">43.8-47.8万</td>
+                                <td class="py-3 px-4">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">核心差异总结：</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-primary">Hi4-Z：</h4>
+                            <p class="text-gray-700">偏向新能源智能化，强调城市+轻越野场景，智驾能力更强</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold mb-2 text-gray-800">Hi4-T：</h4>
+                            <p class="text-gray-700">偏向传统硬核越野，强调极限越野能力</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 长城汽车智能化技术竞争力分析 -->
+            <section class="mb-12">
+                <h2 class="section-title">六、长城汽车智能化技术竞争力分析</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="subsection-title">6.1 智能座舱技术对比</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full bg-white rounded-lg shadow-md">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">厂商/品牌</th>
+                                        <th class="py-3 px-4 text-left">系统</th>
+                                        <th class="py-3 px-4 text-left">芯片平台</th>
+                                        <th class="py-3 px-4 text-left">VLA大模型</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-bold text-primary">长城汽车</td>
+                                        <td class="py-3 px-4">Coffee OS 3.5</td>
+                                        <td class="py-3 px-4">高通8295/英伟达Thor</td>
+                                        <td class="py-3 px-4 text-green-600">✅ 支持</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4">比亚迪</td>
+                                        <td class="py-3 px-4">DiLink 5.0</td>
+                                        <td class="py-3 px-4">高通8295</td>
+                                        <td class="py-3 px-4 text-red-600">❌ 无</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4">吉利</td>
+                                        <td class="py-3 px-4">银河OS 2.0</td>
+                                        <td class="py-3 px-4">高通8155</td>
+                                        <td class="py-3 px-4 text-red-600">❌ 无</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="subsection-title">6.2 智能驾驶技术对比</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full bg-white rounded-lg shadow-md">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">厂商/品牌</th>
+                                        <th class="py-3 px-4 text-left">系统</th>
+                                        <th class="py-3 px-4 text-left">传感器配置</th>
+                                        <th class="py-3 px-4 text-left">算力</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-bold text-primary">长城汽车</td>
+                                        <td class="py-3 px-4">Coffee Pilot 4.0</td>
+                                        <td class="py-3 px-4">27颗传感器+激光雷达</td>
+                                        <td class="py-3 px-4">560TOPS</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4">比亚迪</td>
+                                        <td class="py-3 px-4">天神之眼</td>
+                                        <td class="py-3 px-4">3激光雷达+双Orin-X</td>
+                                        <td class="py-3 px-4">508TOPS</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4">长安</td>
+                                        <td class="py-3 px-4">华为ADS</td>
+                                        <td class="py-3 px-4">3激光雷达+34颗传感器</td>
+                                        <td class="py-3 px-4">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">长城汽车智驾优势：</h3>
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <p class="text-gray-700 text-lg"><strong class="text-primary">行业唯一实现越野场景智驾适配的非承载车型智能体</strong></p>
+                        <p class="text-gray-600 mt-2">在硬派越野这一细分领域，长城汽车通过VLA大模型和专业的越野场景算法，建立了独特的技术壁垒。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2026年长城汽车新技术布局展望 -->
+            <section class="mb-12">
+                <h2 class="section-title">七、2026年长城汽车新技术布局展望</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="subsection-title">7.1 L3级自动驾驶量产路线图</h3>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-24 text-sm text-gray-500">2026年前</div>
+                                    <div class="flex-1">
+                                        <div class="h-2 bg-blue-200 rounded-full">
+                                            <div class="h-2 bg-primary rounded-full" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 text-sm">在特定高速路段实现有条件L3</div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-24 text-sm text-gray-500">2026年</div>
+                                    <div class="flex-1">
+                                        <div class="h-2 bg-blue-200 rounded-full">
+                                            <div class="h-2 bg-primary rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 text-sm">成为高速L3的普及节点，北上广深等一线城市试点</div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-24 text-sm text-gray-500">2027年</div>
+                                    <div class="flex-1">
+                                        <div class="h-2 bg-blue-200 rounded-full">
+                                            <div class="h-2 bg-primary rounded-full" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-48 text-sm">城区L3量产</div>
+                                </div>
+                            </div>
+
+                            <h4 class="font-semibold mt-6 mb-3 text-gray-800">技术支撑：</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fa fa-microchip text-primary mr-2"></i>双Orin-X芯片、线控制动三备份等冗余设计</li>
+                                <li><i class="fa fa-cogs text-primary mr-2"></i>Coffee Pilot 5.0系统，英伟达Thor芯片，算力<strong>700-2000 TOPS</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="subsection-title">7.3 新能源技术创新方向</h3>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h4 class="font-semibold mb-3 text-gray-800">归元平台（全球首个原生AI全动力平台）</h4>
+                            <ul class="space-y-2 text-gray-700 mb-6">
+                                <li><i class="fa fa-bolt text-primary mr-2"></i>兼容PHEV、HEV、BEV、FCEV、ICE五大动力形式</li>
+                                <li><i class="fa fa-car text-primary mr-2"></i>覆盖7大车型品类</li>
+                                <li><i class="fa fa-brain text-primary mr-2"></i>原生集成AI能力</li>
+                            </ul>
+
+                            <h4 class="font-semibold mb-3 text-gray-800">超级Hi4技术</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fa fa-tachometer text-primary mr-2"></i>系统综合功率有望突破<strong>1000马力</strong></li>
+                                <li><i class="fa fa-leaf text-primary mr-2"></i>算法优化降低能耗</li>
+                                <li><i class="fa fa-battery-full text-primary mr-2"></i>自动能量管理、预测性充电</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">7.4 硬件算力平台升级规划</h3>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full bg-white rounded-lg shadow-md">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">平台级别</th>
+                                <th class="py-3 px-4 text-left">算力范围</th>
+                                <th class="py-3 px-4 text-left">定位车型</th>
+                                <th class="py-3 px-4 text-left">配置方案</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4">低算力平台</td>
+                                <td class="py-3 px-4">10-50 TOPS</td>
+                                <td class="py-3 px-4">10万级车型（哈弗猛龙等）</td>
+                                <td class="py-3 px-4">J6M/TI方案，无激光雷达</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4">中算力平台</td>
+                                <td class="py-3 px-4">254-508 TOPS</td>
+                                <td class="py-3 px-4">20-30万级车型（坦克400/500等）</td>
+                                <td class="py-3 px-4">单Orin-X+1激光雷达</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-bold text-primary">高算力平台</td>
+                                <td class="py-3 px-4 font-bold text-primary">700-2000 TOPS</td>
+                                <td class="py-3 px-4 font-bold text-primary">30万级以上车型（坦克700、魏牌V9X等）</td>
+                                <td class="py-3 px-4 font-bold text-primary">英伟达Thor芯片</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 结语与战略建议 -->
+            <section class="mb-12">
+                <h2 class="section-title">九、结语与战略建议</h2>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-800">核心结论</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gray-800">战略定位突破</h4>
+                                <p class="text-gray-700">坦克700 Hi4-Z的成功发布，标志着中国硬派越野市场进入了<strong>"新能源+智能化"</strong>的新时代。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gray-800">双动力策略优势</h4>
+                                <p class="text-gray-700">通过<strong>Hi4-Z/Hi4-T</strong>双动力策略，长城汽车成功覆盖了从城市通勤到极限越野的全场景需求。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gray-800">智能化技术壁垒</h4>
+                                <p class="text-gray-700">通过坚持自主研发路线，在<strong>VLA大模型、越野场景智驾、归元平台</strong>等关键技术领域实现了突破，特别是在越野智能化这一细分市场建立了难以撼动的技术壁垒。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-gray-800">2026年关键节点</h4>
+                                <p class="text-gray-700">随着L3级自动驾驶、Coffee OS 3.5、归元平台、半固态电池等一系列新技术的落地应用，长城汽车有望在智能化转型中实现跨越式发展。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">未来展望</h3>
+                        <p class="text-lg text-gray-700">长城汽车有望在<strong class="text-primary">2026-2027年</strong>实现从传统车企向智能化科技公司的全面转型，成为中国汽车工业高质量发展的标杆企业。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 价格与续航对比图表
+        const priceRangeCtx = document.getElementById('priceRangeChart').getContext('2d');
+        const priceRangeChart = new Chart(priceRangeCtx, {
+            type: 'bar',
+            data: {
+                labels: ['零跑A10 505激光雷达版', '比亚迪元UP 401km领先型', '五菱缤果PLUS 510km旗舰版', '哪吒AYA 401Lite', '名爵MG4 530智趣版'],
+                datasets: [
+                    {
+                        label: '价格(万元)',
+                        data: [8.68, 9.98, 9.88, 6.58, 9.68],
+                        backgroundColor: 'rgba(59, 130, 246, 0.5)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 1,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: '续航里程(km)',
+                        data: [505, 401, 510, 401, 530],
+                        type: 'line',
+                        backgroundColor: 'rgba(16, 185, 129, 0.5)',
+                        borderColor: 'rgba(16, 185, 129, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(16, 185, 129, 1)',
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '价格(万元)'
+                        }
+                    },
+                    y1: {
+                        beginAtZero: true,
+                        position: 'right',
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        title: {
+                            display: true,
+                            text: '续航里程(km)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 智能配置对比图表
+        const smartFeaturesCtx = document.getElementById('smartFeaturesChart').getContext('2d');
+        const smartFeaturesChart = new Chart(smartFeaturesCtx, {
+            type: 'radar',
+            data: {
+                labels: ['智驾芯片', '激光雷达', '摄像头数量', '毫米波雷达', 'NOA功能', '自动泊车', '车机芯片', '屏幕规格'],
+                datasets: [
+                    {
+                        label: '零跑A10 505激光雷达版',
+                        data: [10, 10, 10, 10, 10, 10, 10, 10],
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(59, 130, 246, 1)'
+                    },
+                    {
+                        label: '比亚迪元UP 401km领先型',
+                        data: [0, 0, 5, 0, 2, 0, 7, 7],
+                        backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                        borderColor: 'rgba(16, 185, 129, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(16, 185, 129, 1)'
+                    },
+                    {
+                        label: '五菱缤果PLUS 510km旗舰版',
+                        data: [0, 0, 4, 0, 2, 0, 5, 5],
+                        backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                        borderColor: 'rgba(245, 158, 11, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(245, 158, 11, 1)'
+                    },
+                    {
+                        label: '哪吒AYA 401Lite',
+                        data: [0, 0, 1, 0, 2, 0, 4, 8],
+                        backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                        borderColor: 'rgba(239, 68, 68, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(239, 68, 68, 1)'
+                    },
+                    {
+                        label: '名爵MG4 530智趣版',
+                        data: [8, 0, 6, 5, 8, 8, 8, 10],
+                        backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                        borderColor: 'rgba(139, 92, 246, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(139, 92, 246, 1)'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 10,
+                        ticks: {
+                            stepSize: 2
+                        }
+                    }
+                }
+            }
+        });
+
+
+
+        // 市场份额预测图表
+        const marketShareCtx = document.getElementById('marketShareChart').getContext('2d');
+        const marketShareChart = new Chart(marketShareCtx, {
+            type: 'line',
+            data: {
+                labels: ['2026 Q2', '2026 Q3', '2026 Q4', '2027 Q1', '2027 Q2', '2027 Q3'],
+                datasets: [
+                    {
+                        label: '零跑A10',
+                        data: [5, 12, 18, 22, 25, 27],
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: '比亚迪元UP',
+                        data: [25, 23, 20, 18, 17, 16],
+                        backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                        borderColor: 'rgba(16, 185, 129, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: '五菱缤果PLUS',
+                        data: [18, 17, 16, 15, 14, 14],
+                        backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                        borderColor: 'rgba(245, 158, 11, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: '哪吒AYA',
+                        data: [12, 11, 10, 9, 9, 8],
+                        backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                        borderColor: 'rgba(239, 68, 68, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: '其他品牌',
+                        data: [40, 37, 36, 36, 35, 35],
+                        backgroundColor: 'rgba(107, 114, 128, 0.2)',
+                        borderColor: 'rgba(107, 114, 128, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: '市场份额(%)'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 移动端菜单
+        const menuButton = document.querySelector('button.md\\:hidden');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'fixed inset-0 bg-gray-800 bg-opacity-50 z-50 hidden';
+        
+        const mobileMenuContent = document.createElement('div');
+        mobileMenuContent.className = 'bg-white w-64 h-full p-4 shadow-lg';
+        mobileMenuContent.innerHTML = `
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-car text-primary text-xl"></i>
+                    <span class="text-lg font-bold text-gray-800">车型信息</span>
+                </div>
+                <button class="text-gray-600 focus:outline-none close-menu">
+                    <i class="fa fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <a href="#overview" class="text-gray-600 hover:text-primary transition-colors py-2 border-b border-gray-100">零跑A10</a>
+                <a href="#qq3-overview" class="text-gray-600 hover:text-primary transition-colors py-2 border-b border-gray-100">奇瑞QQ3</a>
+                <a href="#tank700-overview" class="text-gray-600 hover:text-primary transition-colors py-2 border-b border-gray-100">长城坦克700系列</a>
+            </div>
+        `;
+        
+        mobileMenu.appendChild(mobileMenuContent);
+        document.body.appendChild(mobileMenu);
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+        
+        mobileMenu.querySelector('.close-menu').addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+        
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+        
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body></html>
